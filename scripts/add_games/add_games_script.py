@@ -1,6 +1,6 @@
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
-from config import config_data
+from config.config import config_data
 from scripts.extract_data.extract_data import ExtractDataObj
 from pages.login import LoginObj
 from pages.dashboard import DashboardObj
@@ -18,7 +18,7 @@ def test_add_games():
     games_list = extract.extract_data_from_csv()
 
     login = LoginObj(driver)
-    login.login_process(config_data['username'], config_data['valid_password'])
+    login.login_process(config_data['username'], config_data['password'])
 
     dashboard = DashboardObj(driver)
     assert dashboard.logout_button
@@ -30,6 +30,7 @@ def test_add_games():
         progress_status = games_list['progress_status'][row]
         progress_notes = games_list['progress_notes'][row]
         now_playing = games_list['now_playing'][row]
+        whishlist = games_list['whishlist'][row]
         
         new_game = NewGameObj(driver)
         assert new_game.game_name_input
@@ -39,7 +40,8 @@ def test_add_games():
             str(console_name), 
             progress_status, 
             progress_notes, 
-            now_playing
+            now_playing,
+            whishlist
             )
         print('\n')
         print(game_name, 'added to your Backloggery :D')

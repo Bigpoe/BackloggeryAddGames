@@ -22,7 +22,7 @@ class NewGameObj:
         self.add_game_button = driver.find_element_by_css_selector("div input[value='Add Game']")
         self.stealh_add_button = driver.find_element_by_css_selector("div input[value='Stealth Add']")
         
-    def add_new_game_process(self, game, console_name, progress_status, progress_notes, now_playing):
+    def add_new_game_process(self, game, console_name, progress_status, progress_notes, now_playing, whishlist):
         self.game_name_input.send_keys(game)
         
         ## Select the desired console ##
@@ -33,15 +33,15 @@ class NewGameObj:
                 break
 
         ## Select progress status ##
-        if progress_status == 'Unfinished':
+        if progress_status == 'Unfinished' or progress_status == 'unfinished':
             self.unfinished.click()
-        elif progress_status == 'Beaten':
+        elif progress_status == 'Beaten' or progress_status == 'beaten':
             self.beaten.click()
-        elif progress_status == 'Completed':
+        elif progress_status == 'Completed' or progress_status == 'completed':
             self.completed.click()
-        elif progress_status == 'Null':
+        elif progress_status == 'Null' or progress_status == 'null':
             self.null.click()
-        elif progress_status == 'Mastered':
+        elif progress_status == 'Mastered' or progress_status == 'mastered':
             self.mastered.click()
         elif progress_status == '':
             pass
@@ -52,13 +52,13 @@ class NewGameObj:
         ## Mark game as 'playing now' ##
         if now_playing == '1':
             self.now_playing_check.click()
-        elif now_playing == '0':
+        elif now_playing == '0' or now_playing == '':
             pass
 
         ## Add game to wishlist ##
-        if now_playing == '1':
-            self.now_playing_check.click()
-        elif now_playing == '0':
+        if whishlist == '1':
+            self.whishlist_check.click()
+        elif whishlist == '0' or now_playing == '':
             pass
 
         ## Save the game ##
