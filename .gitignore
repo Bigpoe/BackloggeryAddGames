@@ -1,0 +1,14 @@
+# Folders #
+scripts/pocs/
+venv/
+__pycache__
+**/__pycache__/
+
+# Hidden folders #
+.pytest_cache/
+.vscode
+
+# Files #
+config.py
+.DS_Store
+**.pyc
