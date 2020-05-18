@@ -1,16 +1,16 @@
 # README
 
-This is a Python application that allows you add your games information to the **Backloggery** web app. This application still under development, so you can expect future improvements.
+This is a Python application that allows you add games to you **Backloggery** profile. This application is a WIP, so you can expect future improvements.
 
-You need to prepare a .csv file with the game’s information and put it inside the **utils** folder. Check the example contained inside that folder.
+A csv file with the games information is needed inside the **utils** folder. An example is provided inside the aforementioned folder.
 
 ### Requirements
 
-Make sure you have Python 3.7, or later, installed in your computer.  If not, you can install it from  [here](https://www.python.org/downloads/) .
+* Python 3.7 or later. You can install it from [here](https://www.python.org/downloads/).
 
 ### Progress status
 
-For the **Progress status** options, make sure follow those conventions in the `progress_status` column in the .csv file:
+For the **Progress status** options, make sure follow these conventions in the `progress_status` column of the .csv file:
 
 * Unfinished/unfinished
 * Beaten/beaten
@@ -20,7 +20,7 @@ For the **Progress status** options, make sure follow those conventions in the `
 
 ### Wishlist
 
-If you want to add a game to your wishlist, put `1` in the **wishlist** column, otherwise the wishlist checkbox will be ignored.
+If you want to add a game to your wishlist, write `1` in the **wishlist** column, otherwise the wishlist checkbox will be ignored.
 
 ### Instructions for Mac/Unix/Linux
 
