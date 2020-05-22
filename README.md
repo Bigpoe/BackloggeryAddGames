@@ -8,6 +8,12 @@ A csv file with the games information is needed inside the **utils** folder. An 
 
 * Python 3.7 or later. You can install it from [here](https://www.python.org/downloads/).
 
+### Setup you credentials
+
+In the folder **config** you will see the `config_sample.py`file. Open it using plain text editor. In order to login into the Backloggery web app, you need to replace the keys   `your_username` and `your_password` with your username and password and save the changes.
+
+Now, rename the file from `config_sample.py` to `config.py`.
+
 ### Add your games to a .csv file
 
 In order to use this application, you need to add your games details to a csv file named **games_list_detailed.csv** located in **utils** folder. There is an example in the file, so you can follow it to add your game's information.
