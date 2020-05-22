@@ -8,7 +8,7 @@ class ExtractDataObj:
         warnings.filterwarnings('ignore')
         
         # Extrasct data and save it as DataFrame
-        df_games = pd.read_csv('./utils/games_list.csv', encoding='utf-8', dtype=object)
+        df_games = pd.read_csv('./utils/games_list_detailed.csv', encoding='utf-8', dtype=object)
         df_games['progress_status'].fillna(value='', inplace=True)
         df_games['progress_notes'].fillna(value='', inplace=True)
 

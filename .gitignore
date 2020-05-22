@@ -12,3 +12,4 @@ __pycache__
 config.py
 .DS_Store
 **.pyc
+utils/games_list_simple.csv
