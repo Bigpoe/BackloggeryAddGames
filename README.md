@@ -23,7 +23,7 @@ For the **Ownership** options, make sure to follow these conventions in the `own
 * Formerly Owned - formerly owned
 * Other - other
 
-Or it in empty to ignore it.
+Or leave it empty to ignore it.
 
 ### Progress status
 
@@ -35,7 +35,7 @@ For the **Progress status** options, make sure to follow these conventions in th
 * Null
 * Mastered - mastered
 
-Or it in empty to ignore it.
+Or leave it empty to ignore it.
 
 ### Rating level
 
