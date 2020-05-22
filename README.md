@@ -10,7 +10,7 @@ A csv file with the games information is needed inside the **utils** folder. An 
 
 ### Setup you credentials
 
-In the folder **config** you will see the `config_sample.py`file. Open it using plain text editor. In order to login into the Backloggery web app, you need to replace the keys   `your_username` and `your_password` with your username and password and save the changes.
+In the folder **config** you will see a `config_sample.py` file. Open it using plain text editor. In order to login into the Backloggery web app, you need to replace the keys   `your_username` and `your_password` with your username and password and save the changes.
 
 Now, rename the file from `config_sample.py` to `config.py`.
 
@@ -69,9 +69,9 @@ If you want to add a game to your `Wishlist`, write `1` in the **wishlist** colu
 
 ## Version 1.0.0
 
-### Instructions for Mac
+### Instructions for Mac users
 
-### Run from GUI
+### Method 1 - Run from GUI
 
 1. Download the repo.
 2. Open a terminal.
@@ -87,7 +87,7 @@ If you want to add a game to your `Wishlist`, write `1` in the **wishlist** colu
 6. Run `python ./gui/gui_script.py` to generate the GUI.
 7. Click on the option you wish to use.
 
-### Run from pyTest
+### Method 2 - Run from pyTest
 
 1. Download the repo.
 2. Open a terminal.
