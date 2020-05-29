@@ -4,19 +4,19 @@ This is a `Python` + `SeleniumWebDriver` application that allows you add games t
 
 A csv file with the games information is needed inside the **utils** folder. An example is provided inside the aforementioned folder.
 
-### Requirements
+## Requirements
 
 * Python 3.7 or later. You can install it from [here](https://www.python.org/downloads/).
 
-### Setup you credentials
+## Setup you credentials
 
-In the folder **config** you will see a `config_sample.py` file. Open it using plain text editor. In order to login into the Backloggery web app, you need to replace the keys   `your_username` and `your_password` with your username and password and save the changes.
+In the folder **backloggery_add_games/config** you will see a `config_sample.py` file. Open it using plain text editor. Replace the keys   `your_username` and `your_password` with your Backloggery username and password and save the changes on the document.
 
 Now, rename the file from `config_sample.py` to `config.py`.
 
-### Add your games to a .csv file
+## Add your games to a .csv file
 
-In order to use this application, you need to add your games details to a csv file named **games_list_detailed.csv** located in **utils** folder. There is an example in the file, so you can follow it to add your game's information.
+There are tow `.csv` fils in **backloggery_add_games/utils** directory, `games_list_detailed.csv` and `games_list_simple.csv`. Depending on the way you want to add your games, open the proper .csv file to prepare your games information following the example in the file.
 
 ### Ownership
 
@@ -69,25 +69,9 @@ If you want to add a game to your `Wishlist`, write `1` in the **wishlist** colu
 
 ## Version 1.0.0
 
-### Instructions for Mac users
+## Instructions for Mac users
 
-### Method 1 - Run from GUI
-
-1. Download the repo.
-2. Open a terminal.
-3. `cd` to the repo folder, for instance `cd Documents/BackloggeryAddGames`
-4. (**Optional**) create a python virtual environment:
-	1. Run this command to create a virtual environment:
-  `python3 -m venv /path/to/new/virtual/environment` , for instance `python3 -m venv my_venv`
-
-	2. Activate your virtual environment: 
-`source my_venv/bin/activate`
-
-5. Run `pip install -r requirements.txt`
-6. Run `python ./gui/gui_script.py` to generate the GUI.
-7. Click on the option you wish to use.
-
-### Method 2 - Run from pyTest
+### Run the script from command line
 
 1. Download the repo.
 2. Open a terminal.
@@ -100,8 +84,15 @@ If you want to add a game to your `Wishlist`, write `1` in the **wishlist** colu
 `source venv/bin/activate`
 
 5. Run `pip install -r requirements.txt`
-6. Run `python -m pytest ./scripts/add_games/add_games_script.py --show-capture=stdout -v -s`
+6. Run `python add_game_detailed.py` for **detailed option** or `python add_game_simple.py` for **simple option**.
 
 ### Instructions for Windows
 
 **Work in progress**
+
+
+
+
+## License 
+
+This project is under [MIT license](LICENSE)

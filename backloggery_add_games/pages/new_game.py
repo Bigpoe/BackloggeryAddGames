@@ -125,6 +125,8 @@ class NewGameObj:
         self.commets_input.send_keys(review_comments)
 
 
+################ Add games methods ################
+
     ## Add new game detailed mode process ##
     def add_new_game_detailed_mode_process(
             self, 
@@ -163,14 +165,14 @@ class NewGameObj:
             pass
 
         ## Save the game ##
-        self.add_game_button.click()
+        # self.add_game_button.click()
 
 
     ## Add new game simple mode process ##
 
-    def add_new_game_process(self, game_name, system, progress_status, progress_notes, now_playing, whishlist):
+    def add_new_game_simple_mode_process(self, game_name, system, progress_status, progress_notes, now_playing, whishlist):
         self.game_name_input.send_keys(game_name)
-        
+
         ## Select the desired console ##
         select_console = self.system_selector
         for option in select_console.find_elements_by_tag_name('option'):
@@ -208,4 +210,4 @@ class NewGameObj:
             pass
 
         ## Save the game ##
-        self.add_game_button.click()
+        # self.add_game_button.click()

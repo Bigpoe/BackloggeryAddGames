@@ -1,5 +1,4 @@
 # Folders #
-scripts/pocs/
 venv/
 __pycache__
 **/__pycache__/
@@ -9,7 +8,7 @@ __pycache__
 .vscode
 
 # Files #
-config.py
+backloggery_add_games/config/config.py
 .DS_Store
 **.pyc
 utils/games_list_simple.csv

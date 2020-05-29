@@ -3,6 +3,7 @@ import subprocess
 
 execute_simple_option = 'python -m pytest ./scripts/add_games/add_game_simple.py --show-capture=stdout -v -s'
 execute_detailed_option = 'python -m pytest ./scripts/add_games/add_game_detailed.py --show-capture=stdout -v -s'
+# execute_detailed_option = 'cd ../../ && la'
 
 def execute_simple():
     subprocess.run(execute_simple_option, shell=True)
@@ -34,7 +35,7 @@ btn_button2 = tk.Button(
     height=5)
 
 lbl_header.pack()
-# btn_button1.pack()
+btn_button1.pack()
 btn_button2.pack()
 
 window.mainloop()
