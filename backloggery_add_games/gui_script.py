@@ -86,7 +86,7 @@ btn_open = tk.Button(
     command=open_file)
 
 btn_save = tk.Button(
-    text="Save CSV fiel changes", 
+    text="Save CSV file changes", 
     command=save_file)
 
 # games_list_textfield = tk.Text()
