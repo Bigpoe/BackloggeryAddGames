@@ -71,7 +71,7 @@ If you want to add a game to your `Wishlist`, write `1` in the **wishlist** colu
 
 ## Instructions for Mac users
 
-### Run the script from command line
+### Run script from command line
 
 1. Download the repo.
 2. Open a terminal.
@@ -87,7 +87,7 @@ If you want to add a game to your `Wishlist`, write `1` in the **wishlist** colu
 6. Run `pip install -r requirements.txt`
 7. Run `python script_add_game_detailed.py` for **detailed option** or `script_add_game_simple.py` for **simple option**.
 
-### Run the script from user interface
+### Run script from user interface
 
 1. Download the repo.
 2. Open a terminal.

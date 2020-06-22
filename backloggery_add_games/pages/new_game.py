@@ -165,7 +165,7 @@ class NewGameObj:
             pass
 
         ## Save the game ##
-        # self.add_game_button.click()
+        self.add_game_button.click()
 
 
     ## Add new game simple mode process ##
@@ -210,4 +210,4 @@ class NewGameObj:
             pass
 
         ## Save the game ##
-        # self.add_game_button.click()
+        self.add_game_button.click()
