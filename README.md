@@ -76,17 +76,34 @@ If you want to add a game to your `Wishlist`, write `1` in the **wishlist** colu
 1. Download the repo.
 2. Open a terminal.
 3. `cd` to the repo folder, for instance `cd Documents/BackloggeryAddGames`
-4. (**Optional**) create a python virtual environment:
+4. `cd` to `backloggery_add_games`folder.
+5. (**Optional**) create a python virtual environment:
+    1. Run this command to create a virtual environment:
+  `python3 -m venv /path/to/new/virtual/environment` , for instance `python3 -m venv my_venv`
+
+    2. Activate your virtual environment: 
+`source my_venv/bin/activate`
+
+6. Run `pip install -r requirements.txt`
+7. Run `python script_add_game_detailed.py` for **detailed option** or `script_add_game_simple.py` for **simple option**.
+
+### Run the script from user interface
+
+1. Download the repo.
+2. Open a terminal.
+3. `cd` to the repo folder, for instance `cd Documents/BackloggeryAddGames`
+4. `cd` to `backloggery_add_games`folder.
+5. (**Optional**) create a python virtual environment:
 	1. Run this command to create a virtual environment:
   `python3 -m venv /path/to/new/virtual/environment` , for instance `python3 -m venv my_venv`
 
 	2. Activate your virtual environment: 
-`source venv/bin/activate`
+`source my_venv/bin/activate`
 
-5. Run `pip install -r requirements.txt`
-6. Run `python add_game_detailed.py` for **detailed option** or `python add_game_simple.py` for **simple option**.
+6. Run `pip install -r requirements.txt`
+7. Run `python gui_script.py ` for summon the user interface.
 
-### Instructions for Windows
+## Instructions for Windows
 
 **Work in progress**
 
