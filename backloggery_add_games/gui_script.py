@@ -9,8 +9,8 @@ import subprocess
 extract = ExtractDataObj()
 games_list = extract.extract_simple_data_from_csv()
 
-execute_simple_option = config_data['simple_choice']
-execute_detailed_option = config_data['detailed_choice']
+execute_simple_option = 'python backloggery_add_games/script_add_game_simple.py'
+execute_detailed_option = 'python backloggery_add_games/script_add_game_detailed.py'
 
 ## Functions description ##
 def execute_simple():

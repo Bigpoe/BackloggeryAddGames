@@ -169,7 +169,6 @@ class NewGameObj:
 
 
     ## Add new game simple mode process ##
-
     def add_new_game_simple_mode_process(self, game_name, system, progress_status, progress_notes, now_playing, whishlist):
         self.game_name_input.send_keys(game_name)
 

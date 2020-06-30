@@ -5,6 +5,7 @@ from ..extract_data_module.extract_data import ExtractDataObj
 from pages.login import LoginObj
 from pages.dashboard import DashboardObj
 from pages.new_game import NewGameObj
+import time
 
 
 def test_add_games_detailed():
@@ -65,3 +66,7 @@ def test_add_games_detailed():
         print(game_name, 'added to your Backloggery :D')
     
     # assert driver.find_element_by_css_selector("div .update-g"), 'Games added to your Backloggery :D'
+
+def tear_down():
+    time.sleep(3)
+    driver.close()
