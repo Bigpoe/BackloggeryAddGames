@@ -64,12 +64,12 @@ If you want to add a game to your `Wishlist`, write `1` in the **wishlist** colu
 
 ## To do
 
-- Re-factor the method for adding games in 'simple mode'.
-- Enable option to choose between simple and detailed method.
+- Find a way to create portable version
+  
 
 ## Version 1.0.0
 
-## Instructions for Mac users
+## Instructions
 
 ### Run script from command line
 
@@ -102,12 +102,6 @@ If you want to add a game to your `Wishlist`, write `1` in the **wishlist** colu
 
 6. Run `pip install -r requirements.txt`
 7. Run `python gui_script.py ` for summon the user interface.
-
-## Instructions for Windows
-
-**Work in progress**
-
-
 
 
 ## License 
